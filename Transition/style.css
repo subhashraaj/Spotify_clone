@@ -1,0 +1,144 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#eg1{
+    /*
+    Syntax for transition
+
+    <property selection> <duration> <timing funtion> <delay>
+
+    <timing function>
+    {
+    -> linear (const speed)
+    -> ease (slow to fast and slow)
+    -> ease-in (Invading slow returning fast)
+    -> ease-out (Invading fast returning slow)
+    -> ease-in-out (Like ease but the speed transition is visible)
+    -> cubic-beizer: It is used to create custom timing function.
+                    Also required four inputs parameters
+    }
+
+    */
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    transition:all 1s ease;
+}
+#eg1:hover{
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+#eg2{
+    width: 120px;
+    height: 80px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(177, 14, 41);
+    color: rgb(180, 170, 170);
+    font-weight: 900;
+    transition: all 1s ease;
+
+}
+#eg2:active{
+    opacity: 0.2;
+}
+
+/*Transition on Delay */
+#eg3{
+    height: 100px;
+    width: 150px;
+    border: 5px solid brown;
+    transition: all 1s ease 1s;
+}
+#eg3:hover{
+    border-color: blue;
+}
+
+/* Transition on multiple Property*/
+
+#eg4{
+    height: 50px;
+    width: 450px;
+    background-color: yellow;
+    transition: height 5s ease,width 4s ease,background-color 5s ease;
+}
+#eg4:hover{
+    height: 300px;
+    width: 450px;
+    background-color: black;
+}
+
+/* Transition On text*/
+.text{
+    font-size: 30px;
+    font-weight: 900;
+    color: blue;
+    transition: color 0.5s ease;
+}
+#text1:active{
+    color: red;
+}
+#text2:hover{
+    color: red;
+}
+
+/*Transition on Box Shadow*/
+#eg5{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(241, 15, 15);
+    box-shadow: blue 20px 20px 10px;
+    transition: all 0.2s ease;
+}
+#eg5:active{
+    box-shadow: blue 15px 15px 10px;
+}
+
+/*Transition on Transform*/
+#eg6{
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    transition: all 2s ease;
+}
+#eg6:hover{
+    transform:rotate(360deg) ;
+    background-color: purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

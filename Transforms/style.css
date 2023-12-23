@@ -1,0 +1,49 @@
+
+
+.parent{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+<<< Translate >>>
+#eg1{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    transition: all 1s ease;
+}
+#eg1:hover{
+    transform: translateX(40%)translateY(50%);
+}
+
+
+<<< Scale >>>
+#eg1{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    transition: all 1s ease;
+}
+#eg1:hover{
+    transform:scaleX(0.8) scaleY(3)
+
+    -> To increase enter value a and greater than 1
+    -> To decrease enter the value from 0.1 to 0.9
+    
+}
+
+<<< Rotate >>>*/
+
+#eg1{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    transition: all 1s ease;
+    border-top: 10px solid red;
+}
+#eg1:hover{
+    transform:rotateY(70deg)
+}

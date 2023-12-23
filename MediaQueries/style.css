@@ -1,0 +1,99 @@
+/*#box{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+@media screen and (orientation:landscape){
+    #box{
+        background-color: orange;
+
+    }
+
+}*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#nav {
+    background-color: rgb(190, 166, 166);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 45px;
+    box-shadow: 0px 5px 15px rgb(145, 135, 135);
+}
+
+nav>h1 {
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+nav>div>a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    padding-inline: 20px;
+}
+#aboutUs {
+    display: flex;
+    width: 95vw;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+#jeff {
+    width: 697px;
+    height: 482px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px rgb(145, 135, 135);
+}
+
+#para {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#para>h1 {
+
+    font-size: 64px;
+    font-weight: 700;
+}
+
+#para>p {
+
+    font-size: 38px;
+    font-weight: 400;
+}
+#login {
+    border-radius: 500px;
+    background:  rgb(190, 166, 166);
+    width: 323px;
+    height: 66px;
+    flex-shrink: 0;
+    margin-left: 60px;
+    margin-top: 50px;
+    border: none;
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+@media screen and (max-width:750px){
+    #nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #links{
+        display: flex;
+        justify-content: center;
+    }
+    #links>a{
+        font-size: 18px;
+    }
+}

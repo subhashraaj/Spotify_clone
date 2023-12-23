@@ -1,0 +1,142 @@
+/*
+SYNTAX:
+     Animation : <animationName> <Duaration> <Timing Func> <Delay> <Iteration-count>
+
+-->>> KEY FRAME (To specify thr action in the path)
+
+#eg1{
+    width:200px;
+    height: 200px;
+    background-color: tomato;
+    animation: color-change 7s ease;
+}
+@keyframes color-change{
+    10%{
+        background-color: blue;
+    }
+    50%{
+        background-color: aqua;
+    }
+    80%{
+        background-color: blueviolet;
+    }
+}
+
+--->>> Iteration Count (Determines the number of count the function should repeates)*/
+#eg1{
+    width:200px;
+    height: 200px;
+    background-color: tomato;
+    animation: iteration 1s ease 0s 5 alternate forwards;
+}
+@keyframes iteration{
+    40%{
+        width:300px ;
+    }
+    80%{
+        width:500px;
+    }
+}
+/*Animation Direction->Whether the animation should be played in reverse or in alternate direction*/
+#loader{
+    width: 200px;
+    height: 200px;
+    border: 30px solid blue;
+    border-radius: 50%;
+    border-top:30px solid white;
+    animation: loader 1s linear 0s infinite;
+}
+@keyframes loader{
+    100%{
+        rotate: 360deg;
+    }
+}
+#text{
+    animation: text 1s ease 0s infinite;
+    text-align: center;
+}
+@keyframes text{
+    20%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1.5);
+
+    }
+}
+#parent{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner{
+    text-transform: capitalize;
+    width: 1000px;
+    height:180px;
+    background-color: aqua;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: slide-in 10s linear 0s infinite normal;
+}
+@keyframes slide-in{
+    0%{
+        transform:translateX(-150%);
+    }
+    100%{
+        transform: translateX(150%);
+    }
+}
+#ball{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    border: 3px solid black;
+    border-radius: 50%;
+    box-shadow: 0px 30px 30px;
+    animation: bouncing-ball 1s ease-in 0s infinite alternate;
+}
+@keyframes bouncing-ball{
+    0%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+#eye{
+    width: 500px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 50%;
+    border-top:15px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: blink 1.5s ease 1s infinite alternate;
+    overflow: hidden;
+}
+#eye-ball{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50%;
+    border: 50px solid brown;
+}
+@keyframes blink{
+    0%{
+        height:10px;
+    }
+    100%{
+        height: 200px;
+    }
+}

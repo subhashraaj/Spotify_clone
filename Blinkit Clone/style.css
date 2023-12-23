@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#vertical_line{
+    height:100px;
+    border: 1px solid #eeee;
+}
+#search_div{
+    border: 1px solid #eeee;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding-inline: 10px;
+    width:30vw
+}
+#search_div>input{
+    border: none;
+    background-color: transparent;
+    width: 90%;
+    height: 60px;
+}
+#delivery>h3{
+    font-size: 25px;
+    font-weight: 800;
+}
+#delivery>p{
+    font-size: 20px;
+    font-weight: 400;
+}
+#category{
+    width: 89vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.items_list{
+    width: 87vw;
+    margin: auto;
+    
+}
+.scrollable_items{
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.scrollable_items>img{
+    display:inline-block;
+    padding: 5px;
+
+}
+
+.my_cards>p{
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px;
+}
+#cards{
+    width: 87vw;
+    margin: auto;
+}
+.my_cards{
+    width: 280px;
+    display: inline-block 
+    !important;
+    
+}
+
+
+
+
+
+
